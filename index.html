@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid Online Shop</title>
+    <style>
+        body {
+            background-color: #F2EFE1;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header button {
+            padding: 5px 10px;
+            background-color: #F2EFE1;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+        }
+
+        .product-details p {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        form label {
+            margin-bottom: 10px;
+        }
+
+        form input, form select {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            padding: 5px 10px;
+            background-color: #F2EFE1;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <div>
+            <a href="#">Products</a>
+            <button>Cart</button>
+        </div>
+    </header>
+    <main>
+        <div class="product">
+            <img src="apple-product-1.jpg" alt="Apple Product 1">
+            <div class="product-details">
+                <h2>Apple Product 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nisi vel nisi ultricies aliquet.</p>
+                <p>Price: $199.99</p>
+                <p>Color: Silver</p>
+                <p>Storage: 64GB</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="apple-product-2.jpg" alt="Apple Product 2">
+            <div class="product-details">
+                <h2>Apple Product 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nisi vel nisi ultricies aliquet.</p>
+                <p>Price: $299.99</p>
+                <p>Color: Space Gray</p>
+                <p>Storage: 128GB</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2022 Polaroid Online Shop. All rights reserved.
+    </footer>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
